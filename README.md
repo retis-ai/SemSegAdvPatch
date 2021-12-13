@@ -7,7 +7,10 @@ We propose a novel loss function that improves attack performance. We also propo
 The networks under tests proved to be somehow robust to these kinds of attacks, hence raising interesting questions not only about the actual real-world adversarial attack effect, but also on the intrinsic robustness of semantic segmentation models.
 
 
-https://user-images.githubusercontent.com/92364988/136968170-8297abfa-392a-4750-a448-dfcabc57ef62.mp4
+
+https://user-images.githubusercontent.com/92364988/145780409-9f4582eb-1916-456f-8e80-13fbbade6778.mp4
+
+
 
 
 ## Code
