@@ -14,4 +14,38 @@ https://user-images.githubusercontent.com/92364988/145780409-9f4582eb-1916-456f-
 
 
 ## Code
-The code is coming soon with additional features!
+The code is out now!
+
+### Setup
+This code was tested in a virtual environment with Python3.6, on a GPU cluster that supported CUDA>=11.1. 
+You might want to check the installation requirements of your machine before proceeding.
+```
+pip install -r requirements-gpu1.txt
+```
+
+### Datasets
+The datasets used for this paper were:
+* Cityscapes, that you can download from here: https://www.cityscapes-dataset.com/
+* A few custom CARLA datasets, that we can release upon request.
+
+### Models
+Two versions of each network were used for the experiments: the pre-trained version and the fine-tuned version on CARLA. 
+The pretrained versions can be found at:
+- (BiseNet)
+- (DDRNet)
+- (ICNet)
+
+The CARLA fine-tuned versions can be provided upon request.
+
+### Config files
+To perform attacks, a config.yml file is required. Adapt each network's template to your own weights and dataset paths.
+Also, make sure that the path in the field adv_patch/optimization/loss/NPS/argument points to a .txt listing of the printable colors (RGB tuples).
+
+### Launch the attacks!
+Two different attacks are provided: the EOT-based attack (untargeted_patch_attack.py) that can be performed on both Cityscapes and CARLA datasets, and the scene-specific attack, that can only be performed on CARLA datasets.
+```
+python untargeted_patch_attack.py --config configs/config.yml
+python specific_patch_attack.py --config configs/config.yml
+```
+
+
