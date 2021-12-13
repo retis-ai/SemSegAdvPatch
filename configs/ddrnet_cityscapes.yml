@@ -1,33 +1,33 @@
 device:
-    gpu: 7
+    gpu: 6
     n_workers: 16
 
 model:
-    arch: icnetBN
+    arch: ddrnet23Slim
     version: cityscapes
-    path: path/to/pretrained/icnetBN_cityscapes_trainval_90k.pth
+    path:  /path/to/pretrained/ddrnet23Slim_cityscapes.pth
     with_bn: True
-   
+
 data:
     dataset: cityscapes
-    version: pascal #needed for pretrained version
+    version: ddrnet_23 #needed for pretrained version
     train_split: val
     val_split: val
     test_split: test
-    img_rows: 1025
-    img_cols: 2049
+    img_rows: 1024
+    img_cols: 2048
     path: /path/to/cityscapes/root
-    img_norm: False
-    bgr: True
-    bottom_crop: 0
-    std_version: 
+    img_norm: True
+    bottom_crop: 0 
+    bgr: False
+    std_version: ddrnet_23
 
 adv_patch:
     path: 
         resume: #./exp/22_april_2021/patches/patch_final_11.png # FOR RESUMING OPTIMIZATION
         out_dir: ./exp/
         save_patch: True
-        exp_name: exp_name
+        exp_name: ddnet_prova
         save_image_log: 1
         
     optimization:
@@ -64,10 +64,12 @@ adv_patch:
         # EOT
         use_transformations: True
     
+    num_patches: 2
+    max_scaling: 1.2
+    min_scaling: 0.8
 
     attr:
         width : 600
         height : 300
         pos_x:
         pos_y:
-        

@@ -1,26 +1,26 @@
 device:
-    gpu: 7
+    gpu: 5
     n_workers: 16
 
 model:
-    arch: icnetBN
+    arch: bisenetX39
     version: cityscapes
-    path: path/to/pretrained/icnetBN_cityscapes_trainval_90k.pth
+    path: /path/to/pretrained/bisenet/bisenetX39_cityscapes.pth
     with_bn: True
-   
+
 data:
     dataset: cityscapes
-    version: pascal #needed for pretrained version
+    version: ddrnet_23 #needed for pretrained version
     train_split: val
     val_split: val
     test_split: test
-    img_rows: 1025
-    img_cols: 2049
+    img_rows: 1024
+    img_cols: 2048
     path: /path/to/cityscapes/root
-    img_norm: False
-    bgr: True
-    bottom_crop: 0
-    std_version: 
+    img_norm: True
+    bottom_crop: 0 
+    bgr: False
+    std_version: ddrnet_23
 
 adv_patch:
     path: 
@@ -70,4 +70,3 @@ adv_patch:
         height : 300
         pos_x:
         pos_y:
-        
