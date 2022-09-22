@@ -3,7 +3,7 @@ This is the code repository for
 
 * "*Evaluating the Robustness of Semantic Segmentation for Autonomous Driving against Real-World Adversarial Patch Attacks*" by Federico Nesti, Giulio Rossolini, Saasha Nair, Alessandro Biondi, and Giorgio Buttazzo. The paper was accepted for [WACV 2022](https://openaccess.thecvf.com/content/WACV2022/papers/Nesti_Evaluating_the_Robustness_of_Semantic_Segmentation_for_Autonomous_Driving_Against_WACV_2022_paper.pdf).[pre-print](https://arxiv.org/abs/2108.06179).
 
-* "*On the Real-World Adversarial Robustness of Real-Time Semantic Segmentation Models for Autonomous Driving" by Giulio Rossolini, Federico Nesti, Gianluca D'Amico, Saasha Nair, Alessandro Biondi, and Giorgio Buttazzo - (Extended journal version) - [pre-print](https://arxiv.org/abs/2108.06179)
+* "*On the Real-World Adversarial Robustness of Real-Time Semantic Segmentation Models for Autonomous Driving*" by Giulio Rossolini, Federico Nesti, Gianluca D'Amico, Saasha Nair, Alessandro Biondi, and Giorgio Buttazzo - (Extended journal version) - [pre-print](https://arxiv.org/abs/2108.06179)
 
 
 In these papers we extensively explore the robustness of real-time Semantic Segmentation models against adversarial patches in the context of autonomous driving. We perform experiments both on Cityscapes and on datasets collected with the CARLA simulator.
