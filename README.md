@@ -1,7 +1,12 @@
 # SemSegAdvPatch
-This is the code repository for the paper "*Evaluating the Robustness of Semantic Segmentation for Autonomous Driving against Real-World Adversarial Patch Attacks*" by Federico Nesti, Giulio Rossolini, Saasha Nair, Alessandro Biondi, and Giorgio Buttazzo. The paper was accepted for [WACV 2022](https://openaccess.thecvf.com/content/WACV2022/papers/Nesti_Evaluating_the_Robustness_of_Semantic_Segmentation_for_Autonomous_Driving_Against_WACV_2022_paper.pdf). A [pre-print](https://arxiv.org/abs/2108.06179) is also available.
+This is the code repository for 
 
-In this paper we extensively explore the robustness of real-time Semantic Segmentation models against adversarial patches in the context of autonomous driving. We perform experiments both on Cityscapes and on datasets collected with the CARLA simulator.
+* "*Evaluating the Robustness of Semantic Segmentation for Autonomous Driving against Real-World Adversarial Patch Attacks*" by Federico Nesti, Giulio Rossolini, Saasha Nair, Alessandro Biondi, and Giorgio Buttazzo. The paper was accepted for [WACV 2022](https://openaccess.thecvf.com/content/WACV2022/papers/Nesti_Evaluating_the_Robustness_of_Semantic_Segmentation_for_Autonomous_Driving_Against_WACV_2022_paper.pdf).[pre-print](https://arxiv.org/abs/2108.06179).
+
+* "*On the Real-World Adversarial Robustness of Real-Time Semantic Segmentation Models for Autonomous Driving" by Giulio Rossolini, Federico Nesti, Gianluca D'Amico, Saasha Nair, Alessandro Biondi, and Giorgio Buttazzo - (Extended journal version) - [pre-print](https://arxiv.org/abs/2108.06179)
+
+
+In these papers we extensively explore the robustness of real-time Semantic Segmentation models against adversarial patches in the context of autonomous driving. We perform experiments both on Cityscapes and on datasets collected with the CARLA simulator.
 We propose a novel loss function that improves attack performance. We also propose the scene-specific attack, a novel attack methodology that exploits geometrical information from the simulator to apply accurately re-projected patches onto a known, fixed attackable surface (i.e., a billboard). We found that this attack outperforms the standard Expectation-Over-Transformation attack methodology.
 
 The networks under tests proved to be somehow robust to these kinds of attacks, hence raising interesting questions not only about the actual real-world adversarial attack effect, but also on the intrinsic robustness of semantic segmentation models.
