@@ -61,5 +61,14 @@ If you found this code useful, consider citing
     year      = {2022},
     pages     = {2280-2289}
 }
+
+# Journal Version
+@article{rossolini2022real,
+  title={On the Real-World Adversarial Robustness of Real-Time Semantic Segmentation Models for Autonomous Driving},
+  author={Rossolini, Giulio and Nesti, Federico and D'Amico, Gianluca and Nair, Saasha and Biondi, Alessandro and Buttazzo, Giorgio},
+  journal={arXiv preprint arXiv:2201.01850},
+  year={2022}
+}
+
 ```
 
